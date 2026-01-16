@@ -152,7 +152,7 @@ MIT License - See LICENSE file for details
 
 ## Contact
 
-For questions or collaboration: [Your contact information]
+For questions or collaboration: james.kantor@gmail.com
 
 ---
 

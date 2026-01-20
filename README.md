@@ -1,10 +1,10 @@
 # Food-101 Image Classification: TensorFlow to PyTorch Migration
 
-A complete reimplementation of a food image classification system, migrating from TensorFlow to PyTorch while maintaining academic rigor and adding production-ready improvements.
+A complete reimplementation of a food image classification model, migrating from TensorFlow to PyTorch while maintaining academic rigor and adding production-ready improvements.
 
 ## Project Overview
 
-This project ports a high-performing image classification CNN originally developed as part of a Boston University Master's program group project. The original implementation achieved strong academic results using TensorFlow on Google Colab with A100 GPU compute. Post-graduation, the need to run locally on an RTX 5090 GPU—which lacked TensorFlow driver support at the time—motivated a complete framework migration to PyTorch.
+This project ports a high-performing image classification CNN originally developed as part of a Boston University Master's program group project. The original implementation achieved strong academic results using TensorFlow on Google Colab with A100 GPU compute. Post-graduation, I wanted to run the model on a local RTX 5090 GPU which lacked TensorFlow driver support at the time. So, I successfully migrated the code to PyTorch. The original approaches and model selection and experimentation was performed by a team, but this migration is my own work. 
 
 ### Dataset
 - **Food-101**: 101,000 images across 101 food categories
@@ -67,12 +67,10 @@ This project ports a high-performing image classification CNN originally develop
 - Hugging Face Datasets
 - scikit-learn (metrics, splitting)
 - NumPy, Pandas
-- Matplotlib, Seaborn
-```
+- Matplotlib
 
 ### Hardware Requirements
 - CUDA-compatible GPU (tested on RTX 5090)
-- 8GB+ VRAM recommended
 - Mixed precision training enabled
 
 ## Project Structure
@@ -87,11 +85,11 @@ This project ports a high-performing image classification CNN originally develop
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/image-classification-port-to-pytorch.git
+git clone https://github.com/jameskantor-ML/image-classification-port-to-pytorch.git
 cd image-classification-port-to-pytorch
 
 # Install dependencies
-pip install torch torchvision datasets scikit-learn seaborn tqdm
+pip install torch torchvision datasets scikit-learn tqdm
 
 # Launch Jupyter
 jupyter notebook Final_Project_Working_Version_CURRENT.ipynb
@@ -106,7 +104,6 @@ The notebook is organized into sequential sections:
 3. **Training Pipeline**: Custom training loop with mixed precision and early stopping
 4. **Evaluation**: Comprehensive metrics including confusion matrix and top-k accuracy
 
-Simply run cells sequentially. Training takes approximately 1-2 hours on an RTX 5090.
 
 ## Important Notes
 
